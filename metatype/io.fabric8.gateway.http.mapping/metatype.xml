@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.gateway.fabric.http.HttpMappingRuleConfiguration">
+    <OCD id="io.fabric8.gateway.http.mapping" name="%io.fabric8.gateway.http.mapping.name" description="%io.fabric8.gateway.http.mapping.description">
+        <AD id="zooKeeperPath" type="String" default="/fabric/registry/clusters/webapps" name="%io.fabric8.gateway.http.mapping.zooKeeperPath.name" description="%io.fabric8.gateway.http.mapping.zooKeeperPath.description"/>
+        <AD id="uriTemplate" type="String" default="{contextPath}/" name="%io.fabric8.gateway.http.mapping.uriTemplate.name" description="%io.fabric8.gateway.http.mapping.uriTemplate.description"/>
+        <AD id="enabledVersion" type="String" name="%io.fabric8.gateway.http.mapping.enabledVersion.name" description="%io.fabric8.gateway.http.mapping.enabledVersion.description"/>
+        <AD id="reverseHeaders" type="Boolean" default="true" name="%io.fabric8.gateway.http.mapping.reverseHeaders.name" description="%io.fabric8.gateway.http.mapping.reverseHeaders.description"/>
+        <AD id="loadBalancerType" type="String" default="roundrobin" name="%io.fabric8.gateway.http.mapping.loadBalancerType.name" description="%io.fabric8.gateway.http.mapping.loadBalancerType.description">
+            <Option value="random" label="Random"/>
+            <Option value="roundrobin" label="Round Robin"/>
+            <Option value="sticky" label="Sticky"/>
+        </AD>
+        <AD id="stickyLoadBalancerCacheSize" type="Integer" default="10000" name="%io.fabric8.gateway.http.mapping.stickyLoadBalancerCacheSize.name" description="%io.fabric8.gateway.http.mapping.stickyLoadBalancerCacheSize.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.gateway.http.mapping">
+        <Object ocdref="io.fabric8.gateway.http.mapping"/>
+    </Designate>
+</metatype:MetaData>

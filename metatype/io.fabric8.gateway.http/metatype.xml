@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.gateway.fabric.http.FabricHTTPGateway">
+    <OCD id="io.fabric8.gateway.http" name="%io.fabric8.gateway.http.name" description="%io.fabric8.gateway.http.description">
+        <AD id="host" type="String" name="%io.fabric8.gateway.http.host.name" description="%io.fabric8.gateway.http.host.description"/>
+        <AD id="port" type="Integer" default="8080" name="%io.fabric8.gateway.http.port.name" description="%io.fabric8.gateway.http.port.description"/>
+        <AD id="enableIndex" type="Boolean" default="true" name="%io.fabric8.gateway.http.enableIndex.name" description="%io.fabric8.gateway.http.enableIndex.description"/>
+        <AD id="enableWebSocketGateway" type="Boolean" default="true" name="%io.fabric8.gateway.http.enableWebSocketGateway.name" description="%io.fabric8.gateway.http.enableWebSocketGateway.description"/>
+        <AD id="websocketGatewayPrefix" type="String" name="%io.fabric8.gateway.http.websocketGatewayPrefix.name" description="%io.fabric8.gateway.http.websocketGatewayPrefix.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.gateway.http">
+        <Object ocdref="io.fabric8.gateway.http"/>
+    </Designate>
+</metatype:MetaData>

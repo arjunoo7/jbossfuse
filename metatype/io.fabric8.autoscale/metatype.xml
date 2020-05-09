@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
+    <OCD id="io.fabric8.autoscale" name="Fabric8 auto scaler" description="%io.fabric8.autoscale.description">
+        <AD id="pollTime" type="Long" default="10000" name="Poll period" description="The number of milliseconds between polls to check if the system still has its requirements satisfied."/>
+    </OCD>
+    <Designate pid="io.fabric8.autoscale">
+        <Object ocdref="io.fabric8.autoscale"/>
+    </Designate>
+</metatype:MetaData>

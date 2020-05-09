@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.gateway.fabric.detecting.FabricDetectingGateway">
+    <OCD id="io.fabric8.gateway.detecting" name="%io.fabric8.gateway.detecting.name" description="%io.fabric8.gateway.detecting.description">
+        <AD id="zooKeeperPath" type="String" default="/fabric/registry/clusters/amq" name="%io.fabric8.gateway.detecting.zooKeeperPath.name" description="%io.fabric8.gateway.detecting.zooKeeperPath.description"/>
+        <AD id="address" type="String" name="%io.fabric8.gateway.detecting.address.name" description="%io.fabric8.gateway.detecting.address.description"/>
+        <AD id="defaultVirtualHost" type="String" name="%io.fabric8.gateway.detecting.defaultVirtualHost.name" description="%io.fabric8.gateway.detecting.defaultVirtualHost.description"/>
+        <AD id="port" type="Integer" default="61616" name="%io.fabric8.gateway.detecting.port.name" description="%io.fabric8.gateway.detecting.port.description"/>
+        <AD id="openWireEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.detecting.openWireEnabled.name" description="%io.fabric8.gateway.detecting.openWireEnabled.description"/>
+        <AD id="stompEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.detecting.stompEnabled.name" description="%io.fabric8.gateway.detecting.stompEnabled.description"/>
+        <AD id="amqpEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.detecting.amqpEnabled.name" description="%io.fabric8.gateway.detecting.amqpEnabled.description"/>
+        <AD id="mqttEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.detecting.mqttEnabled.name" description="%io.fabric8.gateway.detecting.mqttEnabled.description"/>
+        <AD id="httpEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.detecting.httpEnabled.name" description="%io.fabric8.gateway.detecting.httpEnabled.description"/>
+        <AD id="sslEnabled" type="Boolean" default="false" name="%io.fabric8.gateway.detecting.sslEnabled.name" description="%io.fabric8.gateway.detecting.sslEnabled.description"/>
+        <AD id="loadBalancerType" type="String" default="roundrobin" name="%io.fabric8.gateway.detecting.loadBalancerType.name" description="%io.fabric8.gateway.detecting.loadBalancerType.description">
+            <Option value="random" label="Random"/>
+            <Option value="roundrobin" label="Round Robin"/>
+            <Option value="sticky" label="Sticky"/>
+        </AD>
+        <AD id="stickyLoadBalancerCacheSize" type="Integer" default="10000" name="%io.fabric8.gateway.detecting.stickyLoadBalancerCacheSize.name" description="%io.fabric8.gateway.detecting.stickyLoadBalancerCacheSize.description"/>
+        <AD id="sslProtocol" type="String" default="TLS" name="%io.fabric8.gateway.detecting.sslProtocol.name" description="%io.fabric8.gateway.detecting.sslProtocol.description"/>
+        <AD id="sslStoreType" type="String" default="JKS" name="%io.fabric8.gateway.detecting.sslStoreType.name" description="%io.fabric8.gateway.detecting.sslStoreType.description"/>
+        <AD id="sslAlgorithm" type="String" default="SunX509" name="%io.fabric8.gateway.detecting.sslAlgorithm.name" description="%io.fabric8.gateway.detecting.sslAlgorithm.description"/>
+        <AD id="trustStoreURL" type="String" name="%io.fabric8.gateway.detecting.trustStoreURL.name" description="%io.fabric8.gateway.detecting.trustStoreURL.description"/>
+        <AD id="trustStorePassword" type="String" name="%io.fabric8.gateway.detecting.trustStorePassword.name" description="%io.fabric8.gateway.detecting.trustStorePassword.description"/>
+        <AD id="keyStoreURL" type="String" name="%io.fabric8.gateway.detecting.keyStoreURL.name" description="%io.fabric8.gateway.detecting.keyStoreURL.description"/>
+        <AD id="keyStorePassword" type="String" name="%io.fabric8.gateway.detecting.keyStorePassword.name" description="%io.fabric8.gateway.detecting.keyStorePassword.description"/>
+        <AD id="keyAlias" type="String" name="%io.fabric8.gateway.detecting.keyAlias.name" description="%io.fabric8.gateway.detecting.keyAlias.description"/>
+        <AD id="keyPassword" type="String" name="%io.fabric8.gateway.detecting.keyPassword.name" description="%io.fabric8.gateway.detecting.keyPassword.description"/>
+        <AD id="enabledCipherSuites" type="String" name="%io.fabric8.gateway.detecting.enabledCipherSuites.name" description="%io.fabric8.gateway.detecting.enabledCipherSuites.description"/>
+        <AD id="disabledCypherSuites" type="String" name="%io.fabric8.gateway.detecting.disabledCypherSuites.name" description="%io.fabric8.gateway.detecting.disabledCypherSuites.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.gateway.detecting">
+        <Object ocdref="io.fabric8.gateway.detecting"/>
+    </Designate>
+</metatype:MetaData>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.gateway.fabric.mq.FabricMQGateway">
+    <OCD id="io.fabric8.gateway.mq" name="%io.fabric8.gateway.mq.name" description="%io.fabric8.gateway.mq.description">
+        <AD id="zooKeeperPath" type="String" default="/fabric/registry/clusters/amq" name="%io.fabric8.gateway.mq.zooKeeperPath.name" description="%io.fabric8.gateway.mq.zooKeeperPath.description"/>
+        <AD id="host" type="String" name="%io.fabric8.gateway.mq.host.name" description="%io.fabric8.gateway.mq.host.description"/>
+        <AD id="openWireEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.mq.openWireEnabled.name" description="%io.fabric8.gateway.mq.openWireEnabled.description"/>
+        <AD id="openWirePort" type="Integer" default="61616" name="%io.fabric8.gateway.mq.openWirePort.name" description="%io.fabric8.gateway.mq.openWirePort.description"/>
+        <AD id="stompEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.mq.stompEnabled.name" description="%io.fabric8.gateway.mq.stompEnabled.description"/>
+        <AD id="stompPort" type="Integer" default="61613" name="%io.fabric8.gateway.mq.stompPort.name" description="%io.fabric8.gateway.mq.stompPort.description"/>
+        <AD id="amqpEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.mq.amqpEnabled.name" description="%io.fabric8.gateway.mq.amqpEnabled.description"/>
+        <AD id="amqpPort" type="Integer" default="5672" name="%io.fabric8.gateway.mq.amqpPort.name" description="%io.fabric8.gateway.mq.amqpPort.description"/>
+        <AD id="mqttEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.mq.mqttEnabled.name" description="%io.fabric8.gateway.mq.mqttEnabled.description"/>
+        <AD id="mqttPort" type="Integer" default="1883" name="%io.fabric8.gateway.mq.mqttPort.name" description="%io.fabric8.gateway.mq.mqttPort.description"/>
+        <AD id="websocketEnabled" type="Boolean" default="true" name="%io.fabric8.gateway.mq.websocketEnabled.name" description="%io.fabric8.gateway.mq.websocketEnabled.description"/>
+        <AD id="websocketPort" type="Integer" default="61614" name="%io.fabric8.gateway.mq.websocketPort.name" description="%io.fabric8.gateway.mq.websocketPort.description"/>
+        <AD id="loadBalancerType" type="String" default="roundrobin" name="%io.fabric8.gateway.mq.loadBalancerType.name" description="%io.fabric8.gateway.mq.loadBalancerType.description">
+            <Option value="random" label="Random"/>
+            <Option value="roundrobin" label="Round Robin"/>
+            <Option value="sticky" label="Sticky"/>
+        </AD>
+        <AD id="stickyLoadBalancerCacheSize" type="Integer" default="10000" name="%io.fabric8.gateway.mq.stickyLoadBalancerCacheSize.name" description="%io.fabric8.gateway.mq.stickyLoadBalancerCacheSize.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.gateway.mq">
+        <Object ocdref="io.fabric8.gateway.mq"/>
+    </Designate>
+</metatype:MetaData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.camel.autotest.CamelAutoTestService">
+    <OCD id="io.fabric8.camel.autotest" name="%io.fabric8.camel.autotest.name" description="%io.fabric8.camel.autotest.description">
+        <AD id="mockOutputs" type="Boolean" default="true" name="%io.fabric8.camel.autotest.mockOutputs.name" description="%io.fabric8.camel.autotest.mockOutputs.description"/>
+        <AD id="mockInputs" type="Boolean" default="true" name="%io.fabric8.camel.autotest.mockInputs.name" description="%io.fabric8.camel.autotest.mockInputs.description"/>
+        <AD id="messageFolder" type="String" default="testMessages" name="%io.fabric8.camel.autotest.messageFolder.name" description="%io.fabric8.camel.autotest.messageFolder.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.camel.autotest">
+        <Object ocdref="io.fabric8.camel.autotest"/>
+    </Designate>
+</metatype:MetaData>

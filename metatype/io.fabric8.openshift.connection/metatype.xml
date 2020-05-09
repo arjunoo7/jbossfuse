@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.openshift.ManagedOpenshiftConnection">
+    <OCD id="io.fabric8.openshift.connection" name="%io.fabric8.openshift.connection.name" description="%io.fabric8.openshift.connection.description">
+        <AD id="serverUrl" type="String" default="openshift.redhat.com" name="%io.fabric8.openshift.connection.serverUrl.name" description="%io.fabric8.openshift.connection.serverUrl.description"/>
+        <AD id="login" type="String" name="%io.fabric8.openshift.connection.login.name" description="%io.fabric8.openshift.connection.login.description"/>
+        <AD id="password" type="String" name="%io.fabric8.openshift.connection.password.name" description="%io.fabric8.openshift.connection.password.description"/>
+        <AD id="default.cartridge.url" type="String" default="${default.cartridge.url}" name="%io.fabric8.openshift.connection.default.cartridge.url.name" description="%io.fabric8.openshift.connection.default.cartridge.url.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.openshift.connection">
+        <Object ocdref="io.fabric8.openshift.connection"/>
+    </Designate>
+</metatype:MetaData>

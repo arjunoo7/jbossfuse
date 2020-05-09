@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/io.fabric8.openshift.OpenshiftContainerProvider">
+    <OCD id="io.fabric8.openshift" name="%io.fabric8.openshift.name" description="%io.fabric8.openshift.description">
+        <AD id="default.cartridge.url" type="String" default="${default.cartridge.url}" name="%io.fabric8.openshift.default.cartridge.url.name" description="%io.fabric8.openshift.default.cartridge.url.description"/>
+    </OCD>
+    <Designate pid="io.fabric8.openshift">
+        <Object ocdref="io.fabric8.openshift"/>
+    </Designate>
+</metatype:MetaData>
